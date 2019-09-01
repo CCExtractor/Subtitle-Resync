@@ -1,7 +1,7 @@
 = Installing Dependencies
 
 I have tried to keep very less dependencies. The project
-**co_oCCur** uses three libraries which are statically linked.
+**Subtitle-Resync** uses three libraries which are statically linked.
 It has just a couple of dependencies which makes using it extremely easy.
 Once the requirements are met, using the tool is trivial.
 
@@ -16,7 +16,7 @@ You can refer the easy steps on https://cgold.readthedocs.io/en/latest/first-ste
 
 == Boost Libraries
 
-Boost minimum version *1.65* is required.
+Boost minimum version *1.60* is required.
 
 To be precise, we need the following Boost libraries:
 

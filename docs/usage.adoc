@@ -1,6 +1,6 @@
 = Usage
 
-Obviously, before we use the tool we need to install it, https://github.com/sypai/co-oCCUr/tree/master/docs/installing_dependencies.adoc[this] installation
+Obviously, before we use the tool we need to install it, https://github.com/CCExtractor/Subtitle-Resync/tree/master/docs/installing_dependencies.adoc[this] installation
 guide here will help you do so. Once we have the tool installed this guide
 is all we need to use it to our purpose.
 
@@ -22,36 +22,20 @@ Converting any media to the specified format can be achieved using `ffmpeg`.
 
     ffmpeg -i /path/to/video.ts -acodec pcm_s16le -ac 1 -ar 16000 output/path/name.wav
 
-== Using co_oCCur
+== Using Subtitle-Resync
 
-Running co_oCCur without any instruments lists all the parameters that are to be passed.
+Running Subtitle-Resync without any instruments lists all the parameters that are to be passed.
 
 - Syntax
 
-    ./co_oCCur -tool [tool options] <tool specific arguments>
-
-- Using Tool A [Current status: COMPLETE]
-
 We need 3 files to be passed to the tool. One is the original/reference file, an edited file and the original subtitle for the original/reference file.
 
-    ./co_oCCur -t A -o /path/to/original/audio.wav -m /path/to/modified/audio.wav -s /path/to/original/subtitle.srt
-
-
-- Using Tool B [Current status: Incomplete]
-
-We need 3 files to be passed to the tool. One is the original/reference file, an edited file and the original subtitle for the original/reference file.
-
-    ./co_oCCur -t B /path/to/modified/audio.wav -s /path/to/original/subtitle.srt
-
+    ./resync -o /path/to/original/audio.wav -m /path/to/modified/audio.wav -s /path/to/original/subtitle.srt
 
 == Here's a list of the usage parameters that can be used.
 
 |===
 |Parameter |Value |Description
-
-| `-tool` OR `-t`
-|  NAME: A OR B
-|  Select the tool to be used for subtitle synchronization. REQUIREMENT: YES
 
 | `-org` OR `-o`
 |  FILE /path/to/original/audio.wav
@@ -68,6 +52,3 @@ We need 3 files to be passed to the tool. One is the original/reference file, an
 
 
 == Examples of using Tool A
-
-
-

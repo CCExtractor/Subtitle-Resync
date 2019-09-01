@@ -4,7 +4,7 @@
 
 1. Clone the repository from Github using :
 
-    git clone https://www.github.com/sypai/co-oCCur.git
+    git clone https://www.github.com/CCExtractor/Subtitle-Resync.git
 
 2. Make sure dependencies are installed. The instructions are located in `/docs/installing_dependencies.adoc`.
 
@@ -15,13 +15,13 @@
 
 4. Sync!
 
-    ./co_oCCur -tool [tool options] <tool specific arguments>
+    ./resync -o /path/to/original/audio.wav -m /path/to/modified/audio.wav -s /path/to/original/subtitle.srt
 
 *Windows*
 
 1. Clone the repository from Github using :
 
-    git clone https://www.github.com/sypai/co-oCCur.git
+    git clone https://www.github.com/CCExtractor/Subtitle-Resync.git
 
 2. Make sure dependencies are installed. The instructions are located in `/docs/installing_dependencies.adoc`.
 
@@ -29,4 +29,4 @@
 
 4. Sync!
 
-    ./co_oCCur -tool [tool options] <tool specific arguments>
+    ./resync -o /path/to/original/audio.wav -m /path/to/modified/audio.wav -s /path/to/original/subtitle.srt

@@ -3,12 +3,6 @@
 The current project structure looks like this:
 ```
 .
-├── cmake
-├── demo
-│   ├── media
-│   ├── TestFiles
-│   ├── ToolA
-│   └── ToolB
 ├── docs
 │   ├── code_documentation.adoc
 │   ├── compiling.adoc
@@ -23,25 +17,17 @@ The current project structure looks like this:
 │   ├── lib_ext
 │
 ├── src
-|   |---tools
-|   |    |---toolA.cpp
-|   |    |---toolA.h
-|   |    |---toolB.cpp
-|   |    |---toolB.h
-|   |
 |   |---utils
-|   |    |---align_the_fingerprints.cpp
-|   |    |---align_the_fingerprints.h
-|   |    |---audioSegmentation.cpp
-|   |    |---audioSegmentation.h
-|   |    |---base64String.cpp
-|   |    |---base64String.h
+|   |    |---align_fingerprints.cpp
+|   |    |---align_fingerprints.h
+|   |    |---base64_string.cpp
+|   |    |---base64_string.h
 |   |    |---dactylogram.cpp
 |   |    |---dactylogram.h
 |   |
-|   |---co_occur.cpp
-|   |---co_occur.h
 |   |---main.cpp
+|   |---subtitle_resync.cpp
+|   |---subtitle_resync.h
 |
 |---.gitignore
 |---CMakeLists.txt
@@ -53,12 +39,12 @@ The current project structure looks like this:
 This documentation covers the description of all the source files, the used methods,
 variables which will help anyone understand what's going on under the hood.
 All the files can be found out inside the `src` directory.
-All the classes and the code is under the namespace `co_oCCur`. Most of the methods are documented here,
+All the classes and the code is under the namespace `Subtitle_Resync`. Most of the methods are documented here,
 leaving a few helper methods which are properly named in camelCase and are easy to understand.
 
 Anyway, if you have any method that I have missed, or better you want to contribute feel free to open a PR.
 
-== co_occur.cpp and co_occur.h
+== subtitle_resync.cpp and subtitle_resync.h
 These files trigger everything. The names/paths of the files to be used, the audio file(s) and the subtitle file, is
 passed to the Tool that is being used via the method `init()`
 
@@ -70,7 +56,7 @@ passed to the Tool that is being used via the method `init()`
     void setModifiedAudio(std::string ModifiedAudioName);
     void setOriginalSubtitle(std::string OriginalSRTName);
 
-- The triggering method present inside the `co_oCCur` class.
+- The triggering method present inside the `Subtitle_Resync` class.
 
     /*
     * Based on the Tool to be used, it creates an object
@@ -80,23 +66,7 @@ passed to the Tool that is being used via the method `init()`
     * @params:      None
     * Return value: None
     */
-    void co_oCCur::co_oCCur::init();
-
-== tools/toolA.cpp and tools/toolA.h
-These files contain the methods responsible for the working of Tool A.
-Setting the name of the files to be used, creating objects of classes
-responsible for generating the audio fingerprints, igniting the algorithm that
-compares and matches those audio fingerprints and the classes that sync the subtitles with the audiovisual content.
-
-    /*
-    * Creates an object of the class `AlignFP` passes in
-    * the name of the files and the calls the method to
-    * that sets the Tool in motion
-    *
-    * @params:      None
-    * Return value: None
-    */
-    void co_oCCur::ToolA::sync();
+    void Subtitle_Resync::Subtitle_Resync::init();
 
 == utils/dactylogram.cpp and utils/dactylogram.h
 These files are responsible for the handling of the audio files, storing the data, generation of the audio fingerprints
@@ -109,7 +79,7 @@ using `chromaprint`.
     * @params:      None
     * Return value: None
     */
-    void co_oCCur::Dactylogram::readAudio();
+    void Subtitle_Resync::Dactylogram::readAudio();
 
     /*
     * The internal parameters required for chromaprint to work
@@ -119,7 +89,7 @@ using `chromaprint`.
     * @params:      None
     * Return value: None
     */
-    void co_oCCur::Dactylogram::igniteChromaprint();
+    void Subtitle_Resync::Dactylogram::igniteChromaprint();
 
     /*
     * A public method to retrieve all the fingerprints generated and
@@ -128,7 +98,7 @@ using `chromaprint`.
     * @params:      None
     * Return value: None
     */
-    void co_oCCur::Dactylogram::collectFingerprints();
+    void Subtitle_Resync::Dactylogram::collectFingerprints();
 
     /*
     * A getter used to get all the audio fingerprints for the
@@ -137,7 +107,7 @@ using `chromaprint`.
     * @params:      None
     * Return value: All the fingerprints, a vector of type uint32_t
     */
-    std::vector<uint32_t> co_oCCur::Dactylogram::getAllFingerprints();
+    std::vector<uint32_t> Subtitle_Resync::Dactylogram::getAllFingerprints();
 
     /*
     * Returns the length of the audio in seconds.
@@ -145,7 +115,7 @@ using `chromaprint`.
     * @params:      None
     * Return value: length in seconds, <type> double
     */
-    double co_oCCur::Dactylogram::getAudioLength_secs();
+    double Subtitle_Resync::Dactylogram::getAudioLength_secs();
 
     /*
     * Return the length of the audio in milliseconds.
@@ -153,11 +123,11 @@ using `chromaprint`.
     * @params:      None
     * Return value: length in milliseconds, <type> long int
     */
-    long int co_oCCur::Dactylogram::getAudioLength_ms();
+    long int Subtitle_Resync::Dactylogram::getAudioLength_ms();
 
-== utils/align_the_fingerprints.cpp and utils/align_the_fingerprints.h
+== utils/align_fingerprints.cpp and utils/align_fingerprints.h
 Using the generated audio fingerprints, we use the class AlignFP and it's methods to
-make the subtitles `co_oCCur` with the audiovisual content.
+make the subtitles `Subtitle_Resync` with the audiovisual content.
 Here's what this class' methods and fields are:
 
     // Internally, the fingerprint is an array of 32-bit integer.
@@ -174,7 +144,7 @@ Here's what this class' methods and fields are:
     * @params:      offset - The offset determined using *align_fingerprints()*, <type> int
     * Return value: Returns the score for the first segment, <type> int
     */
-    int co_oCCur::AlignFP::matching_regions(double seconds, int offset, bool local);
+    int Subtitle_Resync::AlignFP::matching_regions(double seconds, int offset, bool local);
 
     /*
     * Compares the fingerprints of the audio files, specifically
@@ -188,7 +158,7 @@ Here's what this class' methods and fields are:
     *               2 = LOCAL_MATCH
     *               3 = NO_MATCH
     */
-    int co_oCCur::AlignFP::align_fingerprints(const std::vector<uint32_t > &fp1_seg, bool print);
+    int Subtitle_Resync::AlignFP::align_fingerprints(const std::vector<uint32_t > &fp1_seg, bool print);
 
     /*
     * Starting from t = 0, the beginning of the audio files it finds the
@@ -197,7 +167,7 @@ Here's what this class' methods and fields are:
     * @params:      None
     * Return value: None
     */
-    void co_oCCur::AlignFP::ground_zero();
+    void Subtitle_Resync::AlignFP::ground_zero();
 
     /*
     * Finds the duration next content segment in the original file.
@@ -205,7 +175,7 @@ Here's what this class' methods and fields are:
     * @params:      i - index of the current segment
     * Return value: None
     */
-    void co_oCCur::AlignFP::next(int i);
+    void Subtitle_Resync::AlignFP::next(int i);
 
     /*
     * Finds the duration of the next commercial in the original file.
@@ -213,7 +183,7 @@ Here's what this class' methods and fields are:
     * @params:      i - index of the current segment.
     * Return value: None
     */
-    void co_oCCur::AlignFP::next_comm(int i);
+    void Subtitle_Resync::AlignFP::next_comm(int i);
 
     /*
     * A method knits everything together and calls the appropriate methods
@@ -222,7 +192,7 @@ Here's what this class' methods and fields are:
     * @params:      None
     * Return value: None
     */
-    void co_oCCur::AlignFP::segment_it();
+    void Subtitle_Resync::AlignFP::segment_it();
 
     /*
     * A method that calls all the required methods, once the segments of the audio are
@@ -232,58 +202,4 @@ Here's what this class' methods and fields are:
     * @params:      None
     * Return value: None
     */
-    void co_oCCur::AlignFP::brum_brum()
-
-== tools/toolB.cpp and tools/toolB.h
-These files contain the methods responsible for the working of Tool B.
-Setting the name of the files to be used, creating objects of classes
-responsible for segmenting the audio and subtitles
-and the classes that sync the subtitles with the audiovisual content.
-
-    /*
-    * Uses the methods in *SiftSRT* to segment the subtitle in multiple frames.
-    *
-    * @params:      None
-    * Return value: None
-    */
-    int co_oCCur::ToolB::createSubtitleString();
-
-    /*
-    * Uses the methods in *audioSegmentation* to segment the audio in multiple frames.
-    *
-    * @params:      None
-    * Return value: None
-    */
-    void co_oCCur::ToolB::createAudioString();
-
-    /*
-    * Once the subtitles and the audio is segmented, the algorithm is supposed to align
-    * the subtitles with the audio.
-    *
-    * @params:      None
-    * Return value: None
-    */
-    void co_oCCur::ToolB::align();
-
-    /*
-    * passes in the name of the files and then calls the method to
-    * that sets the Tool in motion.
-    *
-    * @params:      None
-    * Return value: None
-    */
-    int co_oCCur::ToolB::sync();
-
-== utils/audioSegmentation.cpp and utils/audioSegmentation.h
-Using the WebRTC's VAD the audio is segmented into multiple frames of either 10ms, 20ms or 30ms.
-
-    /*
-    * Leveraging the WebRTC's Voice Activity Detection, this method
-    * segments the audio on the basis of the presenece or absence of audio
-    *
-    * @params:      None
-    * Return value: None
-    */
-    std::vector<char> runVAD(std::vector<int16_t>& samples, int SegmentWindow);
-
-
+    void Subtitle_Resync::AlignFP::brum_brum()
