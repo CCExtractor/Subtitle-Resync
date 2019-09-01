@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/sypai/Subtitle-Resync/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +122,1179 @@ Subtitle_Resync: cmake_check_build_system
 Subtitle_Resync/fast:
 	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/build
 .PHONY : Subtitle_Resync/fast
+
+#=============================================================================
+# Target rules for targets named ccaligner
+
+# Build rule for target.
+ccaligner: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ccaligner
+.PHONY : ccaligner
+
+# fast build rule for target.
+ccaligner/fast:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/build
+.PHONY : ccaligner/fast
+
+#=============================================================================
+# Target rules for targets named webrtc
+
+# Build rule for target.
+webrtc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 webrtc
+.PHONY : webrtc
+
+# fast build rule for target.
+webrtc/fast:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/build
+.PHONY : webrtc/fast
+
+#=============================================================================
+# Target rules for targets named chromaprint
+
+# Build rule for target.
+chromaprint: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 chromaprint
+.PHONY : chromaprint
+
+# fast build rule for target.
+chromaprint/fast:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/build
+.PHONY : chromaprint/fast
+
+libs/lib_ext/CCAligner/commons.o: libs/lib_ext/CCAligner/commons.cpp.o
+
+.PHONY : libs/lib_ext/CCAligner/commons.o
+
+# target to build an object file
+libs/lib_ext/CCAligner/commons.cpp.o:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/commons.cpp.o
+.PHONY : libs/lib_ext/CCAligner/commons.cpp.o
+
+libs/lib_ext/CCAligner/commons.i: libs/lib_ext/CCAligner/commons.cpp.i
+
+.PHONY : libs/lib_ext/CCAligner/commons.i
+
+# target to preprocess a source file
+libs/lib_ext/CCAligner/commons.cpp.i:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/commons.cpp.i
+.PHONY : libs/lib_ext/CCAligner/commons.cpp.i
+
+libs/lib_ext/CCAligner/commons.s: libs/lib_ext/CCAligner/commons.cpp.s
+
+.PHONY : libs/lib_ext/CCAligner/commons.s
+
+# target to generate assembly for a file
+libs/lib_ext/CCAligner/commons.cpp.s:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/commons.cpp.s
+.PHONY : libs/lib_ext/CCAligner/commons.cpp.s
+
+libs/lib_ext/CCAligner/logger.o: libs/lib_ext/CCAligner/logger.cpp.o
+
+.PHONY : libs/lib_ext/CCAligner/logger.o
+
+# target to build an object file
+libs/lib_ext/CCAligner/logger.cpp.o:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/logger.cpp.o
+.PHONY : libs/lib_ext/CCAligner/logger.cpp.o
+
+libs/lib_ext/CCAligner/logger.i: libs/lib_ext/CCAligner/logger.cpp.i
+
+.PHONY : libs/lib_ext/CCAligner/logger.i
+
+# target to preprocess a source file
+libs/lib_ext/CCAligner/logger.cpp.i:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/logger.cpp.i
+.PHONY : libs/lib_ext/CCAligner/logger.cpp.i
+
+libs/lib_ext/CCAligner/logger.s: libs/lib_ext/CCAligner/logger.cpp.s
+
+.PHONY : libs/lib_ext/CCAligner/logger.s
+
+# target to generate assembly for a file
+libs/lib_ext/CCAligner/logger.cpp.s:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/logger.cpp.s
+.PHONY : libs/lib_ext/CCAligner/logger.cpp.s
+
+libs/lib_ext/CCAligner/params.o: libs/lib_ext/CCAligner/params.cpp.o
+
+.PHONY : libs/lib_ext/CCAligner/params.o
+
+# target to build an object file
+libs/lib_ext/CCAligner/params.cpp.o:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/params.cpp.o
+.PHONY : libs/lib_ext/CCAligner/params.cpp.o
+
+libs/lib_ext/CCAligner/params.i: libs/lib_ext/CCAligner/params.cpp.i
+
+.PHONY : libs/lib_ext/CCAligner/params.i
+
+# target to preprocess a source file
+libs/lib_ext/CCAligner/params.cpp.i:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/params.cpp.i
+.PHONY : libs/lib_ext/CCAligner/params.cpp.i
+
+libs/lib_ext/CCAligner/params.s: libs/lib_ext/CCAligner/params.cpp.s
+
+.PHONY : libs/lib_ext/CCAligner/params.s
+
+# target to generate assembly for a file
+libs/lib_ext/CCAligner/params.cpp.s:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/params.cpp.s
+.PHONY : libs/lib_ext/CCAligner/params.cpp.s
+
+libs/lib_ext/CCAligner/read_wav_file.o: libs/lib_ext/CCAligner/read_wav_file.cpp.o
+
+.PHONY : libs/lib_ext/CCAligner/read_wav_file.o
+
+# target to build an object file
+libs/lib_ext/CCAligner/read_wav_file.cpp.o:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/read_wav_file.cpp.o
+.PHONY : libs/lib_ext/CCAligner/read_wav_file.cpp.o
+
+libs/lib_ext/CCAligner/read_wav_file.i: libs/lib_ext/CCAligner/read_wav_file.cpp.i
+
+.PHONY : libs/lib_ext/CCAligner/read_wav_file.i
+
+# target to preprocess a source file
+libs/lib_ext/CCAligner/read_wav_file.cpp.i:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/read_wav_file.cpp.i
+.PHONY : libs/lib_ext/CCAligner/read_wav_file.cpp.i
+
+libs/lib_ext/CCAligner/read_wav_file.s: libs/lib_ext/CCAligner/read_wav_file.cpp.s
+
+.PHONY : libs/lib_ext/CCAligner/read_wav_file.s
+
+# target to generate assembly for a file
+libs/lib_ext/CCAligner/read_wav_file.cpp.s:
+	$(MAKE) -f CMakeFiles/ccaligner.dir/build.make CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/read_wav_file.cpp.s
+.PHONY : libs/lib_ext/CCAligner/read_wav_file.cpp.s
+
+libs/lib_ext/chromaprint/src/audio_processor.o: libs/lib_ext/chromaprint/src/audio_processor.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/audio_processor.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/audio_processor.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/audio_processor.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/audio_processor.cpp.o
+
+libs/lib_ext/chromaprint/src/audio_processor.i: libs/lib_ext/chromaprint/src/audio_processor.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/audio_processor.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/audio_processor.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/audio_processor.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/audio_processor.cpp.i
+
+libs/lib_ext/chromaprint/src/audio_processor.s: libs/lib_ext/chromaprint/src/audio_processor.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/audio_processor.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/audio_processor.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/audio_processor.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/audio_processor.cpp.s
+
+libs/lib_ext/chromaprint/src/avresample/resample2.o: libs/lib_ext/chromaprint/src/avresample/resample2.c.o
+
+.PHONY : libs/lib_ext/chromaprint/src/avresample/resample2.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/avresample/resample2.c.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/avresample/resample2.c.o
+.PHONY : libs/lib_ext/chromaprint/src/avresample/resample2.c.o
+
+libs/lib_ext/chromaprint/src/avresample/resample2.i: libs/lib_ext/chromaprint/src/avresample/resample2.c.i
+
+.PHONY : libs/lib_ext/chromaprint/src/avresample/resample2.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/avresample/resample2.c.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/avresample/resample2.c.i
+.PHONY : libs/lib_ext/chromaprint/src/avresample/resample2.c.i
+
+libs/lib_ext/chromaprint/src/avresample/resample2.s: libs/lib_ext/chromaprint/src/avresample/resample2.c.s
+
+.PHONY : libs/lib_ext/chromaprint/src/avresample/resample2.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/avresample/resample2.c.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/avresample/resample2.c.s
+.PHONY : libs/lib_ext/chromaprint/src/avresample/resample2.c.s
+
+libs/lib_ext/chromaprint/src/chroma.o: libs/lib_ext/chromaprint/src/chroma.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/chroma.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/chroma.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chroma.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/chroma.cpp.o
+
+libs/lib_ext/chromaprint/src/chroma.i: libs/lib_ext/chromaprint/src/chroma.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/chroma.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/chroma.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chroma.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/chroma.cpp.i
+
+libs/lib_ext/chromaprint/src/chroma.s: libs/lib_ext/chromaprint/src/chroma.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/chroma.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/chroma.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chroma.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/chroma.cpp.s
+
+libs/lib_ext/chromaprint/src/chroma_filter.o: libs/lib_ext/chromaprint/src/chroma_filter.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/chroma_filter.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/chroma_filter.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chroma_filter.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/chroma_filter.cpp.o
+
+libs/lib_ext/chromaprint/src/chroma_filter.i: libs/lib_ext/chromaprint/src/chroma_filter.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/chroma_filter.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/chroma_filter.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chroma_filter.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/chroma_filter.cpp.i
+
+libs/lib_ext/chromaprint/src/chroma_filter.s: libs/lib_ext/chromaprint/src/chroma_filter.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/chroma_filter.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/chroma_filter.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chroma_filter.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/chroma_filter.cpp.s
+
+libs/lib_ext/chromaprint/src/chroma_resampler.o: libs/lib_ext/chromaprint/src/chroma_resampler.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/chroma_resampler.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/chroma_resampler.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chroma_resampler.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/chroma_resampler.cpp.o
+
+libs/lib_ext/chromaprint/src/chroma_resampler.i: libs/lib_ext/chromaprint/src/chroma_resampler.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/chroma_resampler.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/chroma_resampler.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chroma_resampler.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/chroma_resampler.cpp.i
+
+libs/lib_ext/chromaprint/src/chroma_resampler.s: libs/lib_ext/chromaprint/src/chroma_resampler.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/chroma_resampler.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/chroma_resampler.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chroma_resampler.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/chroma_resampler.cpp.s
+
+libs/lib_ext/chromaprint/src/chromaprint.o: libs/lib_ext/chromaprint/src/chromaprint.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/chromaprint.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/chromaprint.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chromaprint.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/chromaprint.cpp.o
+
+libs/lib_ext/chromaprint/src/chromaprint.i: libs/lib_ext/chromaprint/src/chromaprint.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/chromaprint.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/chromaprint.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chromaprint.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/chromaprint.cpp.i
+
+libs/lib_ext/chromaprint/src/chromaprint.s: libs/lib_ext/chromaprint/src/chromaprint.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/chromaprint.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/chromaprint.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/chromaprint.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/chromaprint.cpp.s
+
+libs/lib_ext/chromaprint/src/fft.o: libs/lib_ext/chromaprint/src/fft.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/fft.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/fft.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fft.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/fft.cpp.o
+
+libs/lib_ext/chromaprint/src/fft.i: libs/lib_ext/chromaprint/src/fft.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/fft.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/fft.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fft.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/fft.cpp.i
+
+libs/lib_ext/chromaprint/src/fft.s: libs/lib_ext/chromaprint/src/fft.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/fft.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/fft.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fft.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/fft.cpp.s
+
+libs/lib_ext/chromaprint/src/fft_lib_kissfft.o: libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/fft_lib_kissfft.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.o
+
+libs/lib_ext/chromaprint/src/fft_lib_kissfft.i: libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/fft_lib_kissfft.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.i
+
+libs/lib_ext/chromaprint/src/fft_lib_kissfft.s: libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/fft_lib_kissfft.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp.s
+
+libs/lib_ext/chromaprint/src/fingerprint_calculator.o: libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_calculator.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.o
+
+libs/lib_ext/chromaprint/src/fingerprint_calculator.i: libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_calculator.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.i
+
+libs/lib_ext/chromaprint/src/fingerprint_calculator.s: libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_calculator.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp.s
+
+libs/lib_ext/chromaprint/src/fingerprint_compressor.o: libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_compressor.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.o
+
+libs/lib_ext/chromaprint/src/fingerprint_compressor.i: libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_compressor.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.i
+
+libs/lib_ext/chromaprint/src/fingerprint_compressor.s: libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_compressor.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp.s
+
+libs/lib_ext/chromaprint/src/fingerprint_decompressor.o: libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_decompressor.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.o
+
+libs/lib_ext/chromaprint/src/fingerprint_decompressor.i: libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_decompressor.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.i
+
+libs/lib_ext/chromaprint/src/fingerprint_decompressor.s: libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_decompressor.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp.s
+
+libs/lib_ext/chromaprint/src/fingerprint_matcher.o: libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_matcher.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.o
+
+libs/lib_ext/chromaprint/src/fingerprint_matcher.i: libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_matcher.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.i
+
+libs/lib_ext/chromaprint/src/fingerprint_matcher.s: libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_matcher.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp.s
+
+libs/lib_ext/chromaprint/src/fingerprinter.o: libs/lib_ext/chromaprint/src/fingerprinter.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/fingerprinter.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprinter.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter.cpp.o
+
+libs/lib_ext/chromaprint/src/fingerprinter.i: libs/lib_ext/chromaprint/src/fingerprinter.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/fingerprinter.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprinter.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter.cpp.i
+
+libs/lib_ext/chromaprint/src/fingerprinter.s: libs/lib_ext/chromaprint/src/fingerprinter.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/fingerprinter.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprinter.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter.cpp.s
+
+libs/lib_ext/chromaprint/src/fingerprinter_configuration.o: libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter_configuration.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.o
+
+libs/lib_ext/chromaprint/src/fingerprinter_configuration.i: libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter_configuration.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.i
+
+libs/lib_ext/chromaprint/src/fingerprinter_configuration.s: libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter_configuration.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp.s
+
+libs/lib_ext/chromaprint/src/image_builder.o: libs/lib_ext/chromaprint/src/image_builder.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/image_builder.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/image_builder.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/image_builder.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/image_builder.cpp.o
+
+libs/lib_ext/chromaprint/src/image_builder.i: libs/lib_ext/chromaprint/src/image_builder.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/image_builder.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/image_builder.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/image_builder.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/image_builder.cpp.i
+
+libs/lib_ext/chromaprint/src/image_builder.s: libs/lib_ext/chromaprint/src/image_builder.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/image_builder.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/image_builder.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/image_builder.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/image_builder.cpp.s
+
+libs/lib_ext/chromaprint/src/silence_remover.o: libs/lib_ext/chromaprint/src/silence_remover.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/silence_remover.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/silence_remover.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/silence_remover.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/silence_remover.cpp.o
+
+libs/lib_ext/chromaprint/src/silence_remover.i: libs/lib_ext/chromaprint/src/silence_remover.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/silence_remover.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/silence_remover.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/silence_remover.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/silence_remover.cpp.i
+
+libs/lib_ext/chromaprint/src/silence_remover.s: libs/lib_ext/chromaprint/src/silence_remover.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/silence_remover.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/silence_remover.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/silence_remover.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/silence_remover.cpp.s
+
+libs/lib_ext/chromaprint/src/simhash.o: libs/lib_ext/chromaprint/src/simhash.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/simhash.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/simhash.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/simhash.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/simhash.cpp.o
+
+libs/lib_ext/chromaprint/src/simhash.i: libs/lib_ext/chromaprint/src/simhash.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/simhash.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/simhash.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/simhash.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/simhash.cpp.i
+
+libs/lib_ext/chromaprint/src/simhash.s: libs/lib_ext/chromaprint/src/simhash.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/simhash.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/simhash.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/simhash.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/simhash.cpp.s
+
+libs/lib_ext/chromaprint/src/spectrum.o: libs/lib_ext/chromaprint/src/spectrum.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/spectrum.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/spectrum.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/spectrum.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/spectrum.cpp.o
+
+libs/lib_ext/chromaprint/src/spectrum.i: libs/lib_ext/chromaprint/src/spectrum.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/spectrum.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/spectrum.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/spectrum.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/spectrum.cpp.i
+
+libs/lib_ext/chromaprint/src/spectrum.s: libs/lib_ext/chromaprint/src/spectrum.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/spectrum.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/spectrum.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/spectrum.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/spectrum.cpp.s
+
+libs/lib_ext/chromaprint/src/utils/base64.o: libs/lib_ext/chromaprint/src/utils/base64.cpp.o
+
+.PHONY : libs/lib_ext/chromaprint/src/utils/base64.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/src/utils/base64.cpp.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/utils/base64.cpp.o
+.PHONY : libs/lib_ext/chromaprint/src/utils/base64.cpp.o
+
+libs/lib_ext/chromaprint/src/utils/base64.i: libs/lib_ext/chromaprint/src/utils/base64.cpp.i
+
+.PHONY : libs/lib_ext/chromaprint/src/utils/base64.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/src/utils/base64.cpp.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/utils/base64.cpp.i
+.PHONY : libs/lib_ext/chromaprint/src/utils/base64.cpp.i
+
+libs/lib_ext/chromaprint/src/utils/base64.s: libs/lib_ext/chromaprint/src/utils/base64.cpp.s
+
+.PHONY : libs/lib_ext/chromaprint/src/utils/base64.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/src/utils/base64.cpp.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/src/utils/base64.cpp.s
+.PHONY : libs/lib_ext/chromaprint/src/utils/base64.cpp.s
+
+libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.o: libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.o
+
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.o
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.o
+
+libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.i: libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.i
+
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.i
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.i
+
+libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.s: libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.s
+
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.s
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c.s
+
+libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.o: libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.o
+
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.o
+
+# target to build an object file
+libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.o:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.o
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.o
+
+libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.i: libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.i
+
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.i
+
+# target to preprocess a source file
+libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.i:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.i
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.i
+
+libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.s: libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.s
+
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.s
+
+# target to generate assembly for a file
+libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.s:
+	$(MAKE) -f CMakeFiles/chromaprint.dir/build.make CMakeFiles/chromaprint.dir/libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.s
+.PHONY : libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.o: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.i: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.s: libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.o: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.i: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.s: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.o: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.i: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.s: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.o: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.i: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.s: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.o: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.i: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.s: libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c.s
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.o: libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.o
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.o
+
+# target to build an object file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.o:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.o
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.o
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.i: libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.i
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.i
+
+# target to preprocess a source file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.i:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.i
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.i
+
+libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.s: libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.s
+
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.s
+
+# target to generate assembly for a file
+libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.s:
+	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.s
+.PHONY : libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c.s
 
 src/main.o: src/main.cpp.o
 
@@ -264,9 +1437,138 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Subtitle_Resync"
-	@echo "... edit_cache"
+	@echo "... ccaligner"
+	@echo "... webrtc"
+	@echo "... chromaprint"
+	@echo "... libs/lib_ext/CCAligner/commons.o"
+	@echo "... libs/lib_ext/CCAligner/commons.i"
+	@echo "... libs/lib_ext/CCAligner/commons.s"
+	@echo "... libs/lib_ext/CCAligner/logger.o"
+	@echo "... libs/lib_ext/CCAligner/logger.i"
+	@echo "... libs/lib_ext/CCAligner/logger.s"
+	@echo "... libs/lib_ext/CCAligner/params.o"
+	@echo "... libs/lib_ext/CCAligner/params.i"
+	@echo "... libs/lib_ext/CCAligner/params.s"
+	@echo "... libs/lib_ext/CCAligner/read_wav_file.o"
+	@echo "... libs/lib_ext/CCAligner/read_wav_file.i"
+	@echo "... libs/lib_ext/CCAligner/read_wav_file.s"
+	@echo "... libs/lib_ext/chromaprint/src/audio_processor.o"
+	@echo "... libs/lib_ext/chromaprint/src/audio_processor.i"
+	@echo "... libs/lib_ext/chromaprint/src/audio_processor.s"
+	@echo "... libs/lib_ext/chromaprint/src/avresample/resample2.o"
+	@echo "... libs/lib_ext/chromaprint/src/avresample/resample2.i"
+	@echo "... libs/lib_ext/chromaprint/src/avresample/resample2.s"
+	@echo "... libs/lib_ext/chromaprint/src/chroma.o"
+	@echo "... libs/lib_ext/chromaprint/src/chroma.i"
+	@echo "... libs/lib_ext/chromaprint/src/chroma.s"
+	@echo "... libs/lib_ext/chromaprint/src/chroma_filter.o"
+	@echo "... libs/lib_ext/chromaprint/src/chroma_filter.i"
+	@echo "... libs/lib_ext/chromaprint/src/chroma_filter.s"
+	@echo "... libs/lib_ext/chromaprint/src/chroma_resampler.o"
+	@echo "... libs/lib_ext/chromaprint/src/chroma_resampler.i"
+	@echo "... libs/lib_ext/chromaprint/src/chroma_resampler.s"
+	@echo "... libs/lib_ext/chromaprint/src/chromaprint.o"
+	@echo "... libs/lib_ext/chromaprint/src/chromaprint.i"
+	@echo "... libs/lib_ext/chromaprint/src/chromaprint.s"
+	@echo "... libs/lib_ext/chromaprint/src/fft.o"
+	@echo "... libs/lib_ext/chromaprint/src/fft.i"
+	@echo "... libs/lib_ext/chromaprint/src/fft.s"
+	@echo "... libs/lib_ext/chromaprint/src/fft_lib_kissfft.o"
+	@echo "... libs/lib_ext/chromaprint/src/fft_lib_kissfft.i"
+	@echo "... libs/lib_ext/chromaprint/src/fft_lib_kissfft.s"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_calculator.o"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_calculator.i"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_calculator.s"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_compressor.o"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_compressor.i"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_compressor.s"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_decompressor.o"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_decompressor.i"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_decompressor.s"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_matcher.o"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_matcher.i"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprint_matcher.s"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprinter.o"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprinter.i"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprinter.s"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprinter_configuration.o"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprinter_configuration.i"
+	@echo "... libs/lib_ext/chromaprint/src/fingerprinter_configuration.s"
+	@echo "... libs/lib_ext/chromaprint/src/image_builder.o"
+	@echo "... libs/lib_ext/chromaprint/src/image_builder.i"
+	@echo "... libs/lib_ext/chromaprint/src/image_builder.s"
+	@echo "... libs/lib_ext/chromaprint/src/silence_remover.o"
+	@echo "... libs/lib_ext/chromaprint/src/silence_remover.i"
+	@echo "... libs/lib_ext/chromaprint/src/silence_remover.s"
+	@echo "... libs/lib_ext/chromaprint/src/simhash.o"
+	@echo "... libs/lib_ext/chromaprint/src/simhash.i"
+	@echo "... libs/lib_ext/chromaprint/src/simhash.s"
+	@echo "... libs/lib_ext/chromaprint/src/spectrum.o"
+	@echo "... libs/lib_ext/chromaprint/src/spectrum.i"
+	@echo "... libs/lib_ext/chromaprint/src/spectrum.s"
+	@echo "... libs/lib_ext/chromaprint/src/utils/base64.o"
+	@echo "... libs/lib_ext/chromaprint/src/utils/base64.i"
+	@echo "... libs/lib_ext/chromaprint/src/utils/base64.s"
+	@echo "... libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.o"
+	@echo "... libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.i"
+	@echo "... libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.s"
+	@echo "... libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.o"
+	@echo "... libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.i"
+	@echo "... libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.s"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.o"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.i"
+	@echo "... libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

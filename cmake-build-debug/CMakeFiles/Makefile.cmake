@@ -16,12 +16,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/CMakeGenericSystem.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/CMakeInitializeConfigs.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/CMakeLanguageInformation.cmake"
+  "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/CMakePushCheckState.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/GNU-C.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/GNU-CXX.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/Compiler/GNU.cmake"
+  "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/FindBoost.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/Platform/Linux-GNU-C.cmake"
   "/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/share/cmake-3.14/Modules/Platform/Linux-GNU-CXX.cmake"
@@ -49,4 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Subtitle_Resync.dir/DependInfo.cmake"
+  "CMakeFiles/ccaligner.dir/DependInfo.cmake"
+  "CMakeFiles/webrtc.dir/DependInfo.cmake"
+  "CMakeFiles/chromaprint.dir/DependInfo.cmake"
   )

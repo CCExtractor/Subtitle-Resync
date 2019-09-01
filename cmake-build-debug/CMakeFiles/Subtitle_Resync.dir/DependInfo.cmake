@@ -14,10 +14,21 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../libs/lib_co-oCCur/SiftSRT"
+  "../libs/lib_ext/webrtc"
+  "../libs/lib_ext/chromaprint"
+  "../libs/lib_ext/CCAligner"
+  "../libs/lib_ext/NumCpp/NumCpp"
+  "../libs/lib_ext/NumCpp"
+  "../src"
+  "../src/utils"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/webrtc.dir/DependInfo.cmake"
+  "/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/chromaprint.dir/DependInfo.cmake"
+  "/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/ccaligner.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

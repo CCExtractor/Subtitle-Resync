@@ -1,0 +1,2 @@
+/usr/bin/ar qc libccaligner.a  CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/logger.cpp.o CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/commons.cpp.o CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/params.cpp.o CMakeFiles/ccaligner.dir/libs/lib_ext/CCAligner/read_wav_file.cpp.o
+/usr/bin/ranlib libccaligner.a

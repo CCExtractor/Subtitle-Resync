@@ -17,6 +17,16 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/sypai/Subtitle-Resync/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/sypai/Subtitle-Resync/cmake-build-debug"/>
 				<Option type="4"/>
@@ -34,6 +44,14 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_co-oCCur/SiftSRT"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src/utils"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -57,6 +75,14 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_co-oCCur/SiftSRT"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src/utils"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -73,17 +99,478 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="ccaligner">
+				<Option output="/home/sypai/Subtitle-Resync/cmake-build-debug/libccaligner.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/sypai/Subtitle-Resync/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_co-oCCur/SiftSRT"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 ccaligner"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ccaligner/fast">
+				<Option output="/home/sypai/Subtitle-Resync/cmake-build-debug/libccaligner.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sypai/Subtitle-Resync/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_co-oCCur/SiftSRT"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 ccaligner/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="webrtc">
+				<Option output="/home/sypai/Subtitle-Resync/cmake-build-debug/libwebrtc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sypai/Subtitle-Resync/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_co-oCCur/SiftSRT"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 webrtc"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="webrtc/fast">
+				<Option output="/home/sypai/Subtitle-Resync/cmake-build-debug/libwebrtc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sypai/Subtitle-Resync/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_co-oCCur/SiftSRT"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 webrtc/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="chromaprint">
+				<Option output="/home/sypai/Subtitle-Resync/cmake-build-debug/libchromaprint.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sypai/Subtitle-Resync/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_co-oCCur/SiftSRT"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 chromaprint"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="chromaprint/fast">
+				<Option output="/home/sypai/Subtitle-Resync/cmake-build-debug/libchromaprint.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sypai/Subtitle-Resync/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_co-oCCur/SiftSRT"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/libs/lib_ext/NumCpp"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src"/>
+					<Add directory="/home/sypai/Subtitle-Resync/src/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 chromaprint/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sypai/Subtitle-Resync/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner/commons.cpp">
+			<Option target="ccaligner"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner/commons.h">
+			<Option target="ccaligner"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner/logger.cpp">
+			<Option target="ccaligner"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner/logger.h">
+			<Option target="ccaligner"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner/params.cpp">
+			<Option target="ccaligner"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner/params.h">
+			<Option target="ccaligner"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner/read_wav_file.cpp">
+			<Option target="ccaligner"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/CCAligner/read_wav_file.h">
+			<Option target="ccaligner"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/audio_consumer.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/audio_processor.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/audio_processor.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/avresample/avcodec.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/avresample/resample2.c">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/chroma.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/chroma.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/chroma_filter.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/chroma_filter.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/chroma_normalizer.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/chroma_resampler.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/chroma_resampler.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/chromaprint.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/chromaprint.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/classifier.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/debug.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/feature_vector_consumer.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fft.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fft.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fft_frame.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fft_frame_consumer.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fft_lib.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fft_lib_kissfft.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fft_lib_kissfft.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/filter.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/filter_utils.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprint_calculator.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprint_calculator.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprint_compressor.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprint_compressor.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprint_decompressor.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprint_decompressor.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprint_matcher.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprint_matcher.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprinter.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprinter.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprinter_configuration.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/fingerprinter_configuration.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/image.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/image_builder.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/image_builder.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/moving_average.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/quantizer.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/silence_remover.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/silence_remover.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/simhash.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/simhash.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/spectrum.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/spectrum.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils/base64.cpp">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils/base64.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils/gaussian_filter.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils/gradient.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils/pack_int3_array.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils/pack_int5_array.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils/rolling_integral_image.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils/scope_exit.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils/unpack_int3_array.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/src/utils/unpack_int5_array.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.c">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/vendor/kissfft/kiss_fft.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.c">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/chromaprint/vendor/kissfft/tools/kiss_fftr.h">
+			<Option target="chromaprint"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/cross_correlation.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/division_operations.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/downsample_fast.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/energy.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/get_scaling_square.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/min_max_operations.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_48khz.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_by_2_internal.h">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/resample_fractional.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_init.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/spl_inl.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/signal_processing/vector_scaling_operations.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_core.h">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_filterbank.h">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_gmm.h">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.c">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/vad/vad_sp.h">
+			<Option target="webrtc"/>
+		</Unit>
+		<Unit filename="/home/sypai/Subtitle-Resync/libs/lib_ext/webrtc/webrtc/common_audio/vad/webrtc_vad.c">
+			<Option target="webrtc"/>
+		</Unit>
 		<Unit filename="/home/sypai/Subtitle-Resync/src/main.cpp">
 			<Option target="Subtitle_Resync"/>
 		</Unit>

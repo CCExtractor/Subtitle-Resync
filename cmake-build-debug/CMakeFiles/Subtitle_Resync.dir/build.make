@@ -57,35 +57,9 @@ include CMakeFiles/Subtitle_Resync.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Subtitle_Resync.dir/flags.make
 
-CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o: CMakeFiles/Subtitle_Resync.dir/flags.make
-CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o -c /home/sypai/Subtitle-Resync/src/main.cpp
-
-CMakeFiles/Subtitle_Resync.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Subtitle_Resync.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sypai/Subtitle-Resync/src/main.cpp > CMakeFiles/Subtitle_Resync.dir/src/main.cpp.i
-
-CMakeFiles/Subtitle_Resync.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Subtitle_Resync.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sypai/Subtitle-Resync/src/main.cpp -o CMakeFiles/Subtitle_Resync.dir/src/main.cpp.s
-
-CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o: CMakeFiles/Subtitle_Resync.dir/flags.make
-CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o: ../src/subtitle_resync.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o -c /home/sypai/Subtitle-Resync/src/subtitle_resync.cpp
-
-CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sypai/Subtitle-Resync/src/subtitle_resync.cpp > CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.i
-
-CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sypai/Subtitle-Resync/src/subtitle_resync.cpp -o CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.s
-
 CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.o: CMakeFiles/Subtitle_Resync.dir/flags.make
 CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.o: ../src/utils/dactylogram.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.o -c /home/sypai/Subtitle-Resync/src/utils/dactylogram.cpp
 
 CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.i: cmake_force
@@ -98,7 +72,7 @@ CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.s: cmake_force
 
 CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.o: CMakeFiles/Subtitle_Resync.dir/flags.make
 CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.o: ../src/utils/base64_strings.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.o -c /home/sypai/Subtitle-Resync/src/utils/base64_strings.cpp
 
 CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.i: cmake_force
@@ -111,7 +85,7 @@ CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.s: cmake_force
 
 CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.o: CMakeFiles/Subtitle_Resync.dir/flags.make
 CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.o: ../src/utils/align_fingerprints.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.o -c /home/sypai/Subtitle-Resync/src/utils/align_fingerprints.cpp
 
 CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.i: cmake_force
@@ -122,23 +96,55 @@ CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sypai/Subtitle-Resync/src/utils/align_fingerprints.cpp -o CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.s
 
+CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o: CMakeFiles/Subtitle_Resync.dir/flags.make
+CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o: ../src/subtitle_resync.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o -c /home/sypai/Subtitle-Resync/src/subtitle_resync.cpp
+
+CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sypai/Subtitle-Resync/src/subtitle_resync.cpp > CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.i
+
+CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sypai/Subtitle-Resync/src/subtitle_resync.cpp -o CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.s
+
+CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o: CMakeFiles/Subtitle_Resync.dir/flags.make
+CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o -c /home/sypai/Subtitle-Resync/src/main.cpp
+
+CMakeFiles/Subtitle_Resync.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Subtitle_Resync.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sypai/Subtitle-Resync/src/main.cpp > CMakeFiles/Subtitle_Resync.dir/src/main.cpp.i
+
+CMakeFiles/Subtitle_Resync.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Subtitle_Resync.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sypai/Subtitle-Resync/src/main.cpp -o CMakeFiles/Subtitle_Resync.dir/src/main.cpp.s
+
 # Object files for target Subtitle_Resync
 Subtitle_Resync_OBJECTS = \
-"CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o" \
-"CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o" \
 "CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.o" \
 "CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.o" \
-"CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.o"
+"CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.o" \
+"CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o" \
+"CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o"
 
 # External object files for target Subtitle_Resync
 Subtitle_Resync_EXTERNAL_OBJECTS =
 
-Subtitle_Resync: CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o
-Subtitle_Resync: CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o
 Subtitle_Resync: CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.o
 Subtitle_Resync: CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.o
 Subtitle_Resync: CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.o
+Subtitle_Resync: CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o
+Subtitle_Resync: CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o
 Subtitle_Resync: CMakeFiles/Subtitle_Resync.dir/build.make
+Subtitle_Resync: libwebrtc.a
+Subtitle_Resync: libchromaprint.a
+Subtitle_Resync: libccaligner.a
+Subtitle_Resync: /usr/lib/x86_64-linux-gnu/libboost_system.a
+Subtitle_Resync: /usr/lib/x86_64-linux-gnu/libboost_filesystem.a
+Subtitle_Resync: /usr/lib/x86_64-linux-gnu/libboost_system.a
 Subtitle_Resync: CMakeFiles/Subtitle_Resync.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Subtitle_Resync"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Subtitle_Resync.dir/link.txt --verbose=$(VERBOSE)
