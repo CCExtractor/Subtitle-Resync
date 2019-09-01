@@ -174,7 +174,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Subtitle_Resync
+CMAKE_PROJECT_NAME:STATIC=resync
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -246,6 +246,18 @@ Subtitle_Resync_BINARY_DIR:STATIC=/home/sypai/Subtitle-Resync/cmake-build-debug
 
 //Value Computed by CMake
 Subtitle_Resync_SOURCE_DIR:STATIC=/home/sypai/Subtitle-Resync
+
+//Value Computed by CMake
+resync_BINARY_DIR:STATIC=/home/sypai/Subtitle-Resync/cmake-build-debug
+
+//Value Computed by CMake
+resync_SOURCE_DIR:STATIC=/home/sypai/Subtitle-Resync
+
+//Value Computed by CMake
+subtitle_resync_BINARY_DIR:STATIC=/home/sypai/Subtitle-Resync/cmake-build-debug
+
+//Value Computed by CMake
+subtitle_resync_SOURCE_DIR:STATIC=/home/sypai/Subtitle-Resync
 
 
 ########################

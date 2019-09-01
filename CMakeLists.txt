@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(Subtitle_Resync C CXX)
+project(resync C CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -181,5 +181,5 @@ set(SourceFiles
         src/main.cpp
         )
 
-add_executable(Subtitle_Resync ${SourceFiles})
-target_link_libraries(Subtitle_Resync webrtc chromaprint ccaligner ${EXTRA_FLAGS} Boost::system Boost::filesystem)
+add_executable(resync ${SourceFiles})
+target_link_libraries(resync webrtc chromaprint ccaligner ${EXTRA_FLAGS} Boost::system Boost::filesystem)

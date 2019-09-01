@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Subtitle_Resync
+# Target rules for targets named resync
 
 # Build rule for target.
-Subtitle_Resync: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Subtitle_Resync
-.PHONY : Subtitle_Resync
+resync: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 resync
+.PHONY : resync
 
 # fast build rule for target.
-Subtitle_Resync/fast:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/build
-.PHONY : Subtitle_Resync/fast
+resync/fast:
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/build
+.PHONY : resync/fast
 
 #=============================================================================
 # Target rules for targets named ccaligner
@@ -1302,7 +1302,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -1311,7 +1311,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -1320,7 +1320,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/subtitle_resync.o: src/subtitle_resync.cpp.o
@@ -1329,7 +1329,7 @@ src/subtitle_resync.o: src/subtitle_resync.cpp.o
 
 # target to build an object file
 src/subtitle_resync.cpp.o:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.o
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/subtitle_resync.cpp.o
 .PHONY : src/subtitle_resync.cpp.o
 
 src/subtitle_resync.i: src/subtitle_resync.cpp.i
@@ -1338,7 +1338,7 @@ src/subtitle_resync.i: src/subtitle_resync.cpp.i
 
 # target to preprocess a source file
 src/subtitle_resync.cpp.i:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.i
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/subtitle_resync.cpp.i
 .PHONY : src/subtitle_resync.cpp.i
 
 src/subtitle_resync.s: src/subtitle_resync.cpp.s
@@ -1347,7 +1347,7 @@ src/subtitle_resync.s: src/subtitle_resync.cpp.s
 
 # target to generate assembly for a file
 src/subtitle_resync.cpp.s:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/subtitle_resync.cpp.s
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/subtitle_resync.cpp.s
 .PHONY : src/subtitle_resync.cpp.s
 
 src/utils/align_fingerprints.o: src/utils/align_fingerprints.cpp.o
@@ -1356,7 +1356,7 @@ src/utils/align_fingerprints.o: src/utils/align_fingerprints.cpp.o
 
 # target to build an object file
 src/utils/align_fingerprints.cpp.o:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.o
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/align_fingerprints.cpp.o
 .PHONY : src/utils/align_fingerprints.cpp.o
 
 src/utils/align_fingerprints.i: src/utils/align_fingerprints.cpp.i
@@ -1365,7 +1365,7 @@ src/utils/align_fingerprints.i: src/utils/align_fingerprints.cpp.i
 
 # target to preprocess a source file
 src/utils/align_fingerprints.cpp.i:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.i
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/align_fingerprints.cpp.i
 .PHONY : src/utils/align_fingerprints.cpp.i
 
 src/utils/align_fingerprints.s: src/utils/align_fingerprints.cpp.s
@@ -1374,7 +1374,7 @@ src/utils/align_fingerprints.s: src/utils/align_fingerprints.cpp.s
 
 # target to generate assembly for a file
 src/utils/align_fingerprints.cpp.s:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/utils/align_fingerprints.cpp.s
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/align_fingerprints.cpp.s
 .PHONY : src/utils/align_fingerprints.cpp.s
 
 src/utils/base64_strings.o: src/utils/base64_strings.cpp.o
@@ -1383,7 +1383,7 @@ src/utils/base64_strings.o: src/utils/base64_strings.cpp.o
 
 # target to build an object file
 src/utils/base64_strings.cpp.o:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.o
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/base64_strings.cpp.o
 .PHONY : src/utils/base64_strings.cpp.o
 
 src/utils/base64_strings.i: src/utils/base64_strings.cpp.i
@@ -1392,7 +1392,7 @@ src/utils/base64_strings.i: src/utils/base64_strings.cpp.i
 
 # target to preprocess a source file
 src/utils/base64_strings.cpp.i:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.i
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/base64_strings.cpp.i
 .PHONY : src/utils/base64_strings.cpp.i
 
 src/utils/base64_strings.s: src/utils/base64_strings.cpp.s
@@ -1401,7 +1401,7 @@ src/utils/base64_strings.s: src/utils/base64_strings.cpp.s
 
 # target to generate assembly for a file
 src/utils/base64_strings.cpp.s:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/utils/base64_strings.cpp.s
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/base64_strings.cpp.s
 .PHONY : src/utils/base64_strings.cpp.s
 
 src/utils/dactylogram.o: src/utils/dactylogram.cpp.o
@@ -1410,7 +1410,7 @@ src/utils/dactylogram.o: src/utils/dactylogram.cpp.o
 
 # target to build an object file
 src/utils/dactylogram.cpp.o:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.o
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/dactylogram.cpp.o
 .PHONY : src/utils/dactylogram.cpp.o
 
 src/utils/dactylogram.i: src/utils/dactylogram.cpp.i
@@ -1419,7 +1419,7 @@ src/utils/dactylogram.i: src/utils/dactylogram.cpp.i
 
 # target to preprocess a source file
 src/utils/dactylogram.cpp.i:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.i
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/dactylogram.cpp.i
 .PHONY : src/utils/dactylogram.cpp.i
 
 src/utils/dactylogram.s: src/utils/dactylogram.cpp.s
@@ -1428,7 +1428,7 @@ src/utils/dactylogram.s: src/utils/dactylogram.cpp.s
 
 # target to generate assembly for a file
 src/utils/dactylogram.cpp.s:
-	$(MAKE) -f CMakeFiles/Subtitle_Resync.dir/build.make CMakeFiles/Subtitle_Resync.dir/src/utils/dactylogram.cpp.s
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/dactylogram.cpp.s
 .PHONY : src/utils/dactylogram.cpp.s
 
 # Help Target
@@ -1439,7 +1439,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Subtitle_Resync"
+	@echo "... resync"
 	@echo "... ccaligner"
 	@echo "... webrtc"
 	@echo "... chromaprint"

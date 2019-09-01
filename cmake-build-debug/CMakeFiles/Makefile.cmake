@@ -51,7 +51,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Subtitle_Resync.dir/DependInfo.cmake"
+  "CMakeFiles/resync.dir/DependInfo.cmake"
   "CMakeFiles/ccaligner.dir/DependInfo.cmake"
   "CMakeFiles/webrtc.dir/DependInfo.cmake"
   "CMakeFiles/chromaprint.dir/DependInfo.cmake"

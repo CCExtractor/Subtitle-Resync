@@ -4,3 +4,7 @@
 * Github: https://github.com/sypai
 */
 
+int main()
+{
+    return 0;
+}
