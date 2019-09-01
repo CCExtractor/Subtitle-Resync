@@ -1,8 +1,0 @@
-/home/sypai/Applications/clion-2018.3.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/sypai/Subtitle-Resync
--- Boost version: 1.65.1
--- Found the following Boost libraries:
---   system
---   filesystem
--- Configuring done
--- Generating done
--- Build files have been written to: /home/sypai/Subtitle-Resync/cmake-build-debug

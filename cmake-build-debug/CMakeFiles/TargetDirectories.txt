@@ -1,6 +1,0 @@
-/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/resync.dir
-/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/ccaligner.dir
-/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/webrtc.dir
-/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/chromaprint.dir
