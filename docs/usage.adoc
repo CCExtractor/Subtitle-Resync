@@ -32,6 +32,10 @@ We need 3 files to be passed to the tool. One is the original/reference file, an
 
     ./resync -o /path/to/original/audio.wav -m /path/to/modified/audio.wav -s /path/to/original/subtitle.srt
 
+- Output
+    As output we get an in-sync subtitle file. By default, the output subtitle file is
+    saved in the `output` directory in the main tree of the project.
+
 == Here's a list of the usage parameters that can be used.
 
 |===
