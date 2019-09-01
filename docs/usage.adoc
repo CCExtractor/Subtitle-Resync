@@ -1,0 +1,73 @@
+= Usage
+
+Obviously, before we use the tool we need to install it, https://github.com/sypai/co-oCCUr/tree/master/docs/installing_dependencies.adoc[this] installation
+guide here will help you do so. Once we have the tool installed this guide
+is all we need to use it to our purpose.
+
+== CCExtractor
+CCExtractor, the de-facto subtitle tool, can be used to extract
+the subtitles from the original files.
+
+Using CCExtractor:
+
+    ccextractor [options] inputfile1 [inputfile2...] [-o outputfilename]
+
+Everything about CCExtractor can be found https://github.com/CCExtractor/ccextractor[here].
+
+== FFmpeg
+The tools require the audio to be in specific format. The audio needs to be
+raw PCM(16-bit signed int). It should be mono(single channel) sampled at 16KHz.
+
+Converting any media to the specified format can be achieved using `ffmpeg`.
+
+    ffmpeg -i /path/to/video.ts -acodec pcm_s16le -ac 1 -ar 16000 output/path/name.wav
+
+== Using co_oCCur
+
+Running co_oCCur without any instruments lists all the parameters that are to be passed.
+
+- Syntax
+
+    ./co_oCCur -tool [tool options] <tool specific arguments>
+
+- Using Tool A [Current status: COMPLETE]
+
+We need 3 files to be passed to the tool. One is the original/reference file, an edited file and the original subtitle for the original/reference file.
+
+    ./co_oCCur -t A -o /path/to/original/audio.wav -m /path/to/modified/audio.wav -s /path/to/original/subtitle.srt
+
+
+- Using Tool B [Current status: Incomplete]
+
+We need 3 files to be passed to the tool. One is the original/reference file, an edited file and the original subtitle for the original/reference file.
+
+    ./co_oCCur -t B /path/to/modified/audio.wav -s /path/to/original/subtitle.srt
+
+
+== Here's a list of the usage parameters that can be used.
+
+|===
+|Parameter |Value |Description
+
+| `-tool` OR `-t`
+|  NAME: A OR B
+|  Select the tool to be used for subtitle synchronization. REQUIREMENT: YES
+
+| `-org` OR `-o`
+|  FILE /path/to/original/audio.wav
+|  Original Audio File REQUIREMENT: TOOL A, YES    TOOL B, NO
+
+| `-mod` OR `-m`
+|  FILE /path/to/modified/audio.wav
+|  Modified Audio File REQUIREMENT: YES
+
+|  `-srt` OR `-s`
+|  FILE /path/to/original/subtitle.srt
+|  Original subtitle file REQUIREMENT: YES
+|===
+
+
+== Examples of using Tool A
+
+
+

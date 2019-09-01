@@ -1,0 +1,3 @@
+/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/Subtitle_Resync.dir
+/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles/edit_cache.dir

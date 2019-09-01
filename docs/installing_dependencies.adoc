@@ -1,0 +1,42 @@
+= Installing Dependencies
+
+I have tried to keep very less dependencies. The project
+**co_oCCur** uses three libraries which are statically linked.
+It has just a couple of dependencies which makes using it extremely easy.
+Once the requirements are met, using the tool is trivial.
+
+== CMAKE
+
+CMake minimum version *3.10* is required.
+
+CMake can be installed using default system package manager or by getting binaries from
+https://cmake.org/download/[here].
+
+You can refer the easy steps on https://cgold.readthedocs.io/en/latest/first-step/installation.html[readthedocs].
+
+== Boost Libraries
+
+Boost minimum version *1.65* is required.
+
+To be precise, we need the following Boost libraries:
+
+- system
+- filesystem
+
+You can follow https://theboostcpplibraries.com/introduction-installation[this].
+
+*Ubuntu*
+
+    sudo apt-get install libboost-all-dev
+
+
+== FFmpeg
+FFmpeg is not a requirement of the project, but it can be used to convert the media files to the
+project-specific audio (.wav) files.
+
+I had some issues installing it. Using https://trac.ffmpeg.org/wiki/CompilationGuide[this], you won't.
+
+After installing, we can run `ffmpeg` with following arguments to convert the media file to the desired audio format.
+
+    ffmpeg -i path/to/input/video.ts -acodec pcm_s16le -ac 1 -ar 16000 /output/audio/name.wav
+
