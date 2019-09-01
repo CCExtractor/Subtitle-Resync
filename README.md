@@ -7,8 +7,7 @@
   <h4>GSoC 2019 | CCExtractor Development</h4>
 </p>
 
-[![GSoC](https://img.shield
-s.io/badge/GSoC-2019-green.svg)]
+![GSoC](https://img.shields.io/badge/GSoC-2019-green.svg)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 **Subtitle-Resync** is a high-speed subtitle synchronization tool, capable
