@@ -8,7 +8,7 @@
 </p>
 
 [![GSoC](https://img.shield
-s.io/badge/GSoC-2019-green.svg)](https://summerofcode.withgoogle.com/projects/#5538361094176768)
+s.io/badge/GSoC-2019-green.svg)]
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 **Subtitle-Resync** is a high-speed subtitle synchronization tool, capable
