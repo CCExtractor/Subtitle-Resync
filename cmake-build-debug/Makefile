@@ -1431,6 +1431,33 @@ src/utils/dactylogram.cpp.s:
 	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/dactylogram.cpp.s
 .PHONY : src/utils/dactylogram.cpp.s
 
+src/utils/tool.o: src/utils/tool.cpp.o
+
+.PHONY : src/utils/tool.o
+
+# target to build an object file
+src/utils/tool.cpp.o:
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/tool.cpp.o
+.PHONY : src/utils/tool.cpp.o
+
+src/utils/tool.i: src/utils/tool.cpp.i
+
+.PHONY : src/utils/tool.i
+
+# target to preprocess a source file
+src/utils/tool.cpp.i:
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/tool.cpp.i
+.PHONY : src/utils/tool.cpp.i
+
+src/utils/tool.s: src/utils/tool.cpp.s
+
+.PHONY : src/utils/tool.s
+
+# target to generate assembly for a file
+src/utils/tool.cpp.s:
+	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/src/utils/tool.cpp.s
+.PHONY : src/utils/tool.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1584,6 +1611,9 @@ help:
 	@echo "... src/utils/dactylogram.o"
 	@echo "... src/utils/dactylogram.i"
 	@echo "... src/utils/dactylogram.s"
+	@echo "... src/utils/tool.o"
+	@echo "... src/utils/tool.i"
+	@echo "... src/utils/tool.s"
 .PHONY : help
 
 

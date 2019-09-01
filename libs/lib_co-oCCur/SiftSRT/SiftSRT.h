@@ -982,7 +982,7 @@ inline void co_oCCurEditor::Adjust(const std::string &FileName, const std::vecto
     std::vector<std::string> temp1;
     temp1 = split(FileName, '/', temp1);
     std::string adjustedFileName = temp[0] + ".srt";
-    std::string co_oCCurFileName = "../co_oCCur-" + temp1[temp1.size() - 1];
+    std::string co_oCCurFileName = "../output/co_oCCur-" + temp1[temp1.size() - 1];
 
     std::ofstream writeToFile;
     m_FileNameOut = co_oCCurFileName;

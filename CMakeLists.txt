@@ -174,6 +174,8 @@ set(SourceFiles
         src/utils/base64_strings.cpp
         src/utils/align_fingerprints.h
         src/utils/align_fingerprints.cpp
+        src/utils/tool.cpp
+        src/utils/tool.h
 
         src/subtitle_resync.h
         src/subtitle_resync.cpp

@@ -69,11 +69,11 @@ CMAKE_BINARY_DIR = /home/sypai/Subtitle-Resync/cmake-build-debug
 
 # All Build rule for target.
 CMakeFiles/resync.dir/all: CMakeFiles/webrtc.dir/all
-CMakeFiles/resync.dir/all: CMakeFiles/chromaprint.dir/all
 CMakeFiles/resync.dir/all: CMakeFiles/ccaligner.dir/all
+CMakeFiles/resync.dir/all: CMakeFiles/chromaprint.dir/all
 	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/depend
 	$(MAKE) -f CMakeFiles/resync.dir/build.make CMakeFiles/resync.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=28,29,30,31,32,33 "Built target resync"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=28,29,30,31,32,33,34 "Built target resync"
 .PHONY : CMakeFiles/resync.dir/all
 
 # Include target in all.
@@ -83,7 +83,7 @@ all: CMakeFiles/resync.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/resync.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles 52
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/resync.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/resync.dir/rule
@@ -147,7 +147,7 @@ clean: CMakeFiles/ccaligner.dir/clean
 CMakeFiles/webrtc.dir/all:
 	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/depend
 	$(MAKE) -f CMakeFiles/webrtc.dir/build.make CMakeFiles/webrtc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51 "Built target webrtc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sypai/Subtitle-Resync/cmake-build-debug/CMakeFiles --progress-num=35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52 "Built target webrtc"
 .PHONY : CMakeFiles/webrtc.dir/all
 
 # Include target in all.
