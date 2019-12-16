@@ -7,9 +7,7 @@
 
 void CLIHeader()
 {
-    std::cout << "co_oCCur: Subtitle Synchronization tool, Suyash Bajpai." << std::endl;
-    std::cout << "Parent Organization: CCExtractor Development" << std::endl;
-    std::cout << "Mentor: Carlos Fernandez Sans, Google Summer of Code 2019." << std::endl;
+    std::cout << "Subtitle-Resync 0.00, CCExtractor Development." << std::endl;
     std::cout << "-------------------------------------------------------------\n" << std::endl;
 }
 
