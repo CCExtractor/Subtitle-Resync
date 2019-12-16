@@ -39,7 +39,7 @@ cd install
 3. Run `build.sh`
 
 ```bash
-./build.sh
+sh ./build.sh
 ```
 
 5. Sync!
@@ -62,30 +62,6 @@ the dependencies of Subtitle-Resync.
 * Boost Libraries
     
     Minimum version 1.60 is required.
-
-### Building the blocks
- Running `build.sh` can result in:
-
-```bash
-bash: ./build.sh: Permission denied
-```
-
-Possible Turnaround:
-* Give it execute permission (only possible if the file-system gives RW rights)
-
-    ```bash
-    cd Subtitle-Resync/install
-    chmod +x build.sh
-    ./build.sh
-    ```
-
-* Use CMake to build it
-
-    ```bash
-    # Root Directory
-    cmake ./
-    make
-    ```
 
 ### Argument properly
 

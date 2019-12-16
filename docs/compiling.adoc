@@ -11,7 +11,7 @@
 3. Navigate to `install` directory and run `build.sh`.
 
     cd install/
-    ./build.sh
+    sh ./build.sh
 
 4. Sync!
 
